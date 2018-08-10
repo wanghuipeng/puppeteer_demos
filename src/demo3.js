@@ -12,7 +12,6 @@ const puppeteer = require('puppeteer');
     await page.goto('http://www.baidu.com')
     await page.type('#index-kw', 'puppeteer')
     await page.click('#index-bn')
-    await page.waitForNavigation({ timeout: 8000 })
 
     await page.screenshot({
         path: 'C:/Users/pc/Desktop/temp/baidu_iphone_X_search_puppeteer.png'
